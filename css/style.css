@@ -1,0 +1,128 @@
+#wrapper {
+    text-align: center;
+}
+
+/* Attribute Selector */
+div[id^=article], ol.toc {
+    border: 1px solid grey;
+    margin: 25px;
+}
+
+/* A simple counter */
+#article1 {
+    counter-reset: header-one;
+}
+
+#article1 h1::before {
+    content: "[" counter(header-one) "]";
+    counter-increment: header-one;
+    margin: 0 10px;
+}
+
+/* A simple counter with alphabets */
+#article2 {
+    counter-reset: header-two;
+}
+
+#article2 h1::before {
+    content: counter(header-two, upper-alpha);
+    counter-increment: header-two;
+    font-size: 8pc;
+    font-family: monospace;
+}
+
+/* Single Counter with different list-type values */
+#article3 {
+    counter-reset: header-three;
+}
+
+#article3 h1::before {
+    content: counter(header-three, upper-roman)".";
+    counter-increment: header-three;
+    margin: 0 10px;
+}
+
+#article3 h1 {
+    counter-reset: subheader-three;
+}
+
+#article3 h2::before {
+    content: counter(subheader-three, lower-alpha)".";
+    counter-increment: subheader-three;
+    margin: 0 10px;
+}
+
+/* Multiple Counters */
+#article4 {
+    counter-reset: header-four;
+}
+
+#article4 h1::before {
+    content: counter(header-four)")";
+    counter-increment: header-four;
+    background-color: #aaa;
+    margin: 0 10px;
+}
+
+#article4 h1 {
+    counter-reset: subheader-four;
+}
+
+#article4 h2::before {
+    content: counter(header-four)"."counter(subheader-four)")";
+    counter-increment: subheader-four;
+    background-color: #ea7;
+    margin: 0 10px;
+}
+
+/* Misc. Counters */
+#article5 {
+    counter-reset: header-five 5;    /* Resetting to a value other than 0. Counter starts from 6. */
+}
+
+#article5 h1::before {
+    content: counter(header-five);
+    counter-increment: header-five;
+    background-color: #c2a;
+    margin: 0 10px;
+}
+
+#article5 h1 {
+    counter-reset: subheader-five -1;    /* Resetting to a negative value */
+}
+
+#article5 h2::before {
+    content: counter(header-five)"."counter(subheader-five);
+    counter-increment: subheader-five;
+    background-color: #ea7;
+    margin: 0 10px;
+}
+
+/* A simple counter with Unicode characters */
+#article6 {
+    counter-reset: header-six;
+}
+
+#article6 h1::before {
+    content: "[" counter(header-six, telugu) "]";
+    counter-increment: header-six;
+    margin: 0 10px;
+}
+
+/* Recursive Counters */
+ol.toc {
+    text-align: left;
+}
+ol {
+    counter-reset: bullets;
+    list-style: none;
+}
+
+ol > li::before {
+    content: counters(bullets, ".")")";
+    /*content: counters(bullets, ".", lower-greek)")";
+    content: counter(bullets, lower-alpha)")";*/
+    counter-increment: bullets;
+    margin: 0 10px;
+    font-weight: bold;
+}
