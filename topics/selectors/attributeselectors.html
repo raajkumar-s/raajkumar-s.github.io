@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selectors</title>
+    <link rel="stylesheet" href="attributeselectors.css">
+</head>
+
+<body>
+    <section>
+        <article name="firstArticle">
+            <header>
+                <hgroup name="Group">
+                    <h2 lang="en">First article heading</h1>
+                    <h1 lang="en-US">First article sub-heading</h2>
+                </hgroup>
+            </header>
+            <p name="paragraph">"para" is at the beginning of the name attribute</p>
+            <p name="second-para">"para" is at the end of the name attribute</p>
+            <p name="itspara3">name attribute contains "para" in it</p>
+            <footer class="footer first">
+                <p>- written by...</p>
+            </footer>
+        </article>
+
+        <article name="secondArticle">
+            <header>
+                <hgroup name="GROUP">
+                    <h3 lang="en-EU">Second article heading</h3>
+                    <h4 lang="en-IN">Second article sub-heading</h4>
+                </hgroup>
+            </header>
+            This is the second article body
+            <footer class="footer second">
+                <p>- written by...</p>
+            </footer>
+        </article>
+    </section>
+</body>
+
+</html>

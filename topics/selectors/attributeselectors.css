@@ -1,0 +1,75 @@
+section {
+    width: 50%;
+    margin: 0 auto;
+    padding: 25px;
+    background: #eee;
+}
+
+
+/* Attribute Selectors */
+
+
+/* Any article element which has atribute "name" will be selected */
+
+article[name] {
+    background-color: #ccc;
+    padding: 25px;
+    margin: 10px;
+}
+
+
+/* Any article element which has atribute "name" with value equal to "secondArticle" will be selected */
+
+article[name="secondArticle"] {
+    background-color: #8bf;
+}
+
+
+/* Any paragraph element which has atribute "name" with value which contains "para" will be selected */
+
+p[name*="para"] {
+    color: forestgreen;
+}
+
+
+/* Any paragraph element which has atribute "name" with value which starts with "para" will be selected */
+
+p[name^="para"] {
+    color: darkblue;
+}
+
+
+/* Any paragraph element which has atribute "name" with value which end with "para" will be selected */
+
+p[name$="para"] {
+    color: firebrick;
+}
+
+
+/* Any element which has atribute "lang" whose value is exactly "en" and immedialtely followed by hyphen/minus(-).
+This is specially used for language subcode matches.
+*/
+
+[lang|="en"] {
+    color: #444;
+}
+
+
+/* Any element which has atribute "class" whose value is a whitespace-separated list of words, in which one is exactly "footer"
+This is specially used for class selection and data attribute selection.
+*/
+
+[class~="footer"] {
+    color: #555;
+    text-align: right;
+}
+
+
+/* Adding an i (or I) before the closing bracket causes the value to be compared case-insensitively (for characters within the ASCII range).
+
+    NOTE: Supported only in very recent version of browsers
+*/
+
+[name="group" i] {
+    border-bottom: 2px solid grey;
+}

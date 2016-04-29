@@ -1,0 +1,25 @@
+#button {
+    width: 180px;
+    height: 80px;
+    opacity: 0.6;
+    background: orange;
+    text-align: center;
+    line-height: 500%;
+    border-radius: 10px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: transform 2s, opacity 2s, background 2s, width 2s, height 2s, line-height 2s;
+}
+
+#button:hover {
+    transform: rotateX(360deg);
+    opacity: 1;
+    background: #1ec7e6;
+    width: 360px;
+    height: 160px;
+    line-height: 1000%;
+}

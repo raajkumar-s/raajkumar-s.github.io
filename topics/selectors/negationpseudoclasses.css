@@ -1,0 +1,7 @@
+P {
+    color: #00F;
+}
+
+p:not(.para) {
+    color: #0FF;
+}

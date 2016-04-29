@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Combinator Selectors Example</title>
+    <link rel="stylesheet" href="combinators.css">
+</head>
+
+<body>
+    <div style="display: none;">Combinator Selectors in CSS</div>
+    <div id="wrapper">
+        <div class="container one">
+            <h1 class="title">Descendant Selectors</h1>
+            <h4>Selects all the descendant elements.</h4>
+            <p class="para">Paragraph1</p>
+            <p class="para">Paragraph2</p>
+            <p class="para">Paragraph3</p>
+            <span class="sp">
+               <p>Paragraph1 inside span is also selected</p>
+               <p>Paragraph2 inside span is also selected</p>
+            </span>
+            <p class="para">Paragraph4</p>
+            <p class="para">Paragraph5</p>
+        </div>
+        <div class="container two">
+            <h1 class="title">Child Selectors</h1>
+            <h4>Selects only the element that are direct children.</h4>
+            <p class="para">Paragraph1</p>
+            <p class="para">Paragraph2</p>
+            <p class="para">Paragraph3</p>
+            <span class="sp">
+               <p>Paragraph1 inside span is not selected</p>
+               <p>Paragraph2 inside span is not selected</p>
+            </span>
+            <p class="para">Paragraph4</p>
+            <p class="para">Paragraph5</p>
+            <p class="para">Paragraph6</p>
+            <p class="para">Paragraph7</p>
+        </div>
+        <div class="container three">
+            <h1 class="title">Adjacent Sibling Combinators</h1>
+            <h4>Selects only the specified element that immediately follows the former specified element.</h4>
+            <p class="para">Paragraph1</p>
+            <p class="para">Paragraph2</p>
+            <p class="para">Paragraph3</p>
+            <span class="sp">
+               <p>Paragraph1 inside span is not affected</p>
+               <p>Paragraph2 inside span is not affected</p>
+            </span>
+            <p class="para">Paragraph4 is affected because it is not an adjacent sibling of Paragraph3</p>
+            <p class="para">Paragraph5</p>
+        </div>
+        <div class="container four">
+            <h1 class="title">General Sibling Combinators</h1>
+            <h4>Selects only if it is preceded by the first, and both share a common parent.</h4>
+            <p class="para">Paragraph1</p>
+            <p class="para">Paragraph2</p>
+            <p class="para">Paragraph3</p>
+            <span class="sp">
+               <p>Paragraph1 inside span is not affected</p>
+               <p>Paragraph2 inside span is not affected</p>
+            </span>
+            <p class="para">Eventhough Paragraph4 is not an adjacent sibling of Paragraph3, it is still affected by the general combinator</p>
+            <p class="para">Paragraph5</p>
+        </div>
+    </div>
+</body>
+
+</html>

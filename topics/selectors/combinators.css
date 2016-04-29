@@ -1,0 +1,56 @@
+#wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container {
+    border: 1px solid grey;
+    margin: 20px;
+    padding: 0px 15px;
+}
+
+#wrapper div:nth-child(2n) {
+    background: #eee;
+}
+
+#wrapper div:nth-child(2n+1) {
+    background: #E5F7FD;
+}
+
+h1 {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.para {
+    font: 20px Georgia;
+    color: #333;
+}
+
+.sp p {
+    padding-left: 20px;
+}
+
+
+/* Combinators */
+
+
+/* Descendant Selectors - Selects all the descendant elements */
+div.one p {
+    color: #d77;
+}
+
+/* Child Selectors - Selects only the element that are direct children */
+div.two > p {
+    color: #ca4;
+}
+
+/* Adjacent Sibling Combinators - Selects only the specified element that immediately follows the former specified element*/
+div.three p.para + p {
+    color: #a67;
+}
+
+/* General Sibling Combinators - Selects only if it is preceded by the first, and both share a common parent */
+div.four p.para ~ p {
+    color: #987;
+}

@@ -1,0 +1,17 @@
+div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+#container1 > p {
+    color: #0F0;
+}
+
+#container2 p.para + p {
+    color: #00F;
+}
+
+#container3 p.para ~ p {
+    color: #F0F;
+}

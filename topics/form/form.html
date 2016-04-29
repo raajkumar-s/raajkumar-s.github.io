@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div style="display:none;">*** Form with Pseudo Classes ***</div>
+    <div id="formContainer">
+        <form id="form" name="form">
+            <div>
+                <span class="label" data-field="*">Username</span>
+                <input data type="text" required>
+            </div>
+            <div>
+                <span class="label" data-field="*">Password</span>
+                <input type="password" required>
+            </div>
+            <div>
+                <span class="label" data-field="*">Email</span>
+                <input type="email" required>
+            </div>
+            <div>
+                <span class="label">Phone </span>
+                <input type="tel" pattern="[0-9]" optional>
+            </div>
+            <div>
+                <span class="label">Website </span>
+                <input type="url" optional>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

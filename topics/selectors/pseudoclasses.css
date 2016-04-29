@@ -1,0 +1,15 @@
+/*#container p:nth-child(3) {
+    color: #0F0;
+}
+#container p:nth-child(4*3/2) {
+    color: #0F0;
+}
+*/
+
+#container p:nth-child(odd) {
+    color: #0F0;
+}
+
+#container p:nth-child(even) {
+    color: #00F;
+}

@@ -1,0 +1,51 @@
+div#formContainer {
+    width: 600px;
+    height: 50%;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+div:not([id="formContainer"]) {
+    margin: 10px;
+}
+
+span.label {
+    width: 90px;
+    display: inline-block;
+    text-align: left;
+    padding: 0 10px;
+    font-family: 'Proxima Nova Bold', "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+span.label::after {
+    content: attr(data-field);
+    color: rgb(255, 40, 40);
+    font-size: 75%;
+}
+
+input {
+    font-family: 'Proxima Nova Bold', "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+input:required {
+    border: 1px solid rgb(255, 170, 170);
+    box-shadow: 0 0 2px rgb(255, 160, 160);
+}
+
+input:optional {
+    border: 1px solid #7799B9;
+    box-shadow: 0 0 2px #558abb;
+}
+
+input:valid {
+    background: rgb(235, 255, 235);
+}
+
+input:invalid {
+    background: rgb(255, 215, 215);
+}
