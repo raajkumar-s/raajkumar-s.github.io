@@ -4,7 +4,22 @@ body {
     margin: 0;
 }
 
-a {
+div#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: aqua;
+    background-color: aqua;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+a.articlelink {
     display: block;
     margin: 15px;
 }
