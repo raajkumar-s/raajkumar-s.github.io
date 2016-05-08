@@ -1,18 +1,49 @@
+/*
+BG   #221E1D #ECEAE0 #E9633B
+TEXT #EDEBE1 #AEAB9D #63AA9C #221E1D
+*/
+
 html,
 body {
     padding: 0;
     margin: 0;
+    height: 100%;
+    background-color: #221E1D;
 }
 
 div#wrapper {
     width: 1000px;
     margin: 0 auto;
+    height: 100%;
+    background-color: #ECEAE0;
 }
 
 header {
-    background-color: aqua;
-    background-color: aqua;
+    background-color: #EB593C;
     text-align: center;
+    padding: 20px;
+    min-height: 75px;
+    position: relative;
+}
+
+header a {
+    text-decoration: none;
+    color: #EDEBE1;
+    padding: 10px;
+}
+
+header > div {
+    float: left;
+}
+
+header > div div {
+    display: inline-block;
+    margin: 20px;
+}
+
+header div.logo-container > a {
+    font-size: 40px;
+    line-height: 75px;
 }
 
 footer {
