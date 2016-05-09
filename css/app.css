@@ -24,7 +24,6 @@ div#wrapper {
 
 header {
     background-color: #EB593C;
-    text-align: center;
     padding: 20px;
     min-height: 75px;
     position: relative;
@@ -36,9 +35,7 @@ header a {
     padding: 10px;
 }
 
-header > div {
-    float: left;
-}
+header > div {}
 
 header > div div {
     display: inline-block;
@@ -50,11 +47,17 @@ header div.logo-container > a {
     line-height: 75px;
 }
 
-footer {
-    text-align: center;
+section#main_section {
+    width: 90%;
+    padding: 20px 5%;
 }
 
-a.articlelink {
+section article.article-item {
+    width: 49%;
+    display: inline-block;
+}
+
+section article.article-item a.articlelink {
     display: block;
     margin: 15px;
 }
