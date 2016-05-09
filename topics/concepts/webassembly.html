@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is WebAssembly</title>
+    <link rel="stylesheet" href="webassembly.css">
+</head>
+<body>
+   <header>
+       <h2>So, what's all about assembly for web?</h2>
+   </header>
+
+    What are asm.js, NaCl and WebAssembly
+All the above mentioned technologies are focused on one single target, that is "Faster web"
+
+asm.js
+	asm.js is an intermediate programming language which is a strict subset of javascript. It converts the statically typed pragramming languages like C/C++
+
+  Bringing native code to web
+  One step closer in the race of performance
+  In the future, web will be home for all the developers independent of their technology.
+  Helps in web based operating systems gain advantage
+
+  WebAssembly
+  Develop an app (write the source code in any language that can be compiled to WebAssembly).
+  Use a compiler to turn the source code into WebAssembly bytecode (and potentially into assembly-code if required).
+  Load the bytecode in a browser and run it.
+  The initial implementations of WebAssembly aim at feature parity with asm.js. In other words, what you can do today with asm.js, you will be able to do (better) with WebAssembly once it becomes available. One of the improvements you can expect in the initial versions are better load times. The binary format behind WebAssembly is much faster to parse than the text representation of asm.js. So even in its initial version, WebAssembly will result in improvements. This is what the current documents for WebAssembly call the minimum viable product (MVP). For future versions, some of the improvements we can expect are:
+
+  Full threading support
+  SIMD types and intrinsics
+  Zero-cost exceptions (stack inspection and unwinding)
+  Coroutines
+  Dynamic linking
+  DOM integration
+  Integrated garbage collection
+  Tail-call optimization
+  Multi-process support
+  Some of these things would be really hard to implement using JavaScript or even plain asm.js. WebAssembly is being developed with these things in mind and will serve as a great platform for languages that support these (and other) features
+  This means that it is actually possible to write WebAssembly directly, or decompile existing binary files into something that is much more readable than opcodes or instructions.
+  WebAssembly is not the end of JavaScript. WebAssembly is the much needed complement to JavaScript for the web.
+
+
+  asm.js
+
+
+
+  NaCl
+  Compiles the code and runs it in a sandbox to prevent it from accessing unauthozied APIs
+  "Validator" check and ensures that the application is secure and doesn't violate any rules. This runs on top of the existing chrome sandbox which is kind of double check.
+  It's opening doors for all the developers of other languages to enter the world of web and browsers. This will help in bringing many applications to web which are not already, because of the learning curve invloved in learning JavaScript for statically typed programmers
+  Best suitable for games, CAD modelling, medical industry
+  NaCl
+  	- Need to compile the code for every different hardware platform
+  	- NaCl runs architecture-dependent (nexe) modules and packs it with the application. NaCl decides which modules to run depending on the underlying hardware architecture.
+  	- Apps and extensions installed via chrome store can use NaCl
+  	-
+  PNaCl (pinnacle)
+  	- Is portable accross multiple platform with one-time compilation
+  	- Single module (pexe)
+  	- Chrome translator translates the entire module in to native code depending on the underlying hardware architecture. This process is a ahead of time translation.
+  	- Any web server can host PNaCl
+
+  demo of PNaCl https://gonativeclient.appspot.com/demo/smoothlife
+  Refs:
+  https://developer.chrome.com/native-client
+
+  The method of implementation is different for each other and have their own benifits. But ultimately the idea boils down to a single point,
+  "Make the web faster and better"
+</body>
+</html>
