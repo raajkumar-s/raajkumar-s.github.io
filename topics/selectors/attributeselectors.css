@@ -1,3 +1,7 @@
+html, body {
+    height: auto;
+}
+
 section {
     width: 50%;
     margin: 0 auto;

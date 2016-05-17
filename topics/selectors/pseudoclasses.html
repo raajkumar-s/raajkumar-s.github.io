@@ -4,18 +4,64 @@
 <head>
     <meta charset="utf-8">
     <title>Pseudo Classes</title>
+    <link rel="stylesheet" href="../../css/app.css">
     <link rel="stylesheet" href="pseudoclasses.css">
 </head>
 
 <body>
-    <!-- Pseudo Classes -->
-    <div id="container">
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
+    <div id="wrapper">
+        <header id="main_header">
+            <div>
+                <div class="logo-container">
+                    <a href="/" class="rk-logo">RKTech's blog</a>
+                </div>
+                <div class="nav_container">
+                    <nav>
+                        <a href="/topics/">Topics</a>
+                        <a href="/about.html">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section id="section_one">
+            <header>
+                <h3>nth-child()</h3>
+            </header>
+            <article>
+                <p>nth-child() and all other similar pseudo classes are using <code>an+b</code> as the formula to select the child elements. But CSS also gives us handy <code>even</code> and <code>odd</code> which are used to select all the odd and even children respectively.</p>
+                <p id="oddevendesc">See the below example, all the even elements are in <span>this</span> color and odd elements are in <span>this</span> color.</p>
+                <!-- Pseudo Classes -->
+                <div id="container">
+                    <p>Sample paragraph text 1</p>
+                    <p>Sample paragraph text 2</p>
+                    <p>Sample paragraph text 3</p>
+                    <p>Sample paragraph text 4</p>
+                    <p>Sample paragraph text 5</p>
+                    <p>Sample paragraph text 6</p>
+                    <p>Sample paragraph text 7</p>
+                </div>
+
+                <section>
+                    <p>Now lets see how we can leverage this pseduo class using <code>an+b</code> to select the children in a way we never did before.</p>
+                    <p id="formuladesc">In the below example, I've applied <span>this</span> color for every 3<sup>rd</sup> element starting from 2<sup>nd</sup> child element. To achieve this I used <code>3n+2</code>. Replace <code>n</code> with <code>0, 1, 2, 3, 4... until 12</code> and you'll get to know the result will be <code>2, 5, 8 and 11</code>. </br>Similarly I've applied <span>this</span> color on every third element. I'll leave the formula for this to your guess.</p>
+                    <div id="container2">
+                        <p>Sample paragraph text 1</p>
+                        <p>Sample paragraph text 2</p>
+                        <p>Sample paragraph text 3</p>
+                        <p>Sample paragraph text 4</p>
+                        <p>Sample paragraph text 5</p>
+                        <p>Sample paragraph text 6</p>
+                        <p>Sample paragraph text 7</p>
+                        <p>Sample paragraph text 8</p>
+                        <p>Sample paragraph text 9</p>
+                        <p>Sample paragraph text 10</p>
+                        <p>Sample paragraph text 11</p>
+                        <p>Sample paragraph text 12</p>
+                    </div>
+                </section>
+            </article>
+        </section>
     </div>
 </body>
 

@@ -6,10 +6,54 @@
 }
 */
 
+html, body {
+    height: auto;
+}
+
+div[id^="container"] {
+    background: #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+
 #container p:nth-child(odd) {
-    color: #0F0;
+    color: #0a5;
 }
 
 #container p:nth-child(even) {
     color: #00F;
+}
+
+#oddevendesc span:nth-child(odd) {
+    color: #0a5;
+}
+
+#oddevendesc span:nth-child(even) {
+    color: #00F;
+}
+
+/* nth-child(an+b), where n=0,1,2,3....m */
+/* m is total number of elements */
+
+/* Select every 3rd element starting from 2nd element */
+#container2 p:nth-child(3n+2) {
+    color: #a45;
+}
+
+/* Select every 3rd element */
+#container2 p:nth-child(3n) {
+    color: #48d;
+}
+
+#formuladesc span:nth-child(odd) {
+    color: #a45;
+}
+
+#formuladesc span:nth-child(even) {
+    color: #48d;
+}
+
+code {
+    font-weight: 700;
+    font-size: 120%;
 }

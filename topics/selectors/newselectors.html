@@ -4,54 +4,73 @@
 <head>
     <meta charset="utf-8">
     <title>New Selectors</title>
+    <link rel="stylesheet" href="../../css/app.css">
     <link rel="stylesheet" href="newselectors.css">
 </head>
 
 <body>
-    <!-- New CSS selectors -->
-    <!-- Symbol ">" - Direct descendant/child selector.
+
+    <div id="wrapper">
+        <header id="main_header">
+            <div>
+                <div class="logo-container">
+                    <a href="/" class="rk-logo">RKTech's blog</a>
+                </div>
+                <div class="nav_container">
+                    <nav>
+                        <a href="/topics/">Topics</a>
+                        <a href="/about.html">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <!-- New CSS selectors -->
+            <!-- Symbol ">" - Direct descendant/child selector.
         - It will target elements which are DIRECT children of a particular element.
      -->
-    <div id="container1">
-        <p class="newpara">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="otherpara">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-    </div>
+            <div id="container1">
+                <p class="newpara">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="otherpara">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+            </div>
 
-    <!-- Symbol "+" - Adjacent sibling combinator selector.
+            <!-- Symbol "+" - Adjacent sibling combinator selector.
         - In below code, any "p" element DIRECTLY AFTER a "p" will be selected (not a child or parent though, a sibling).
      -->
-    <div id="container2">
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <span>Some text in span tag</span>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="changedclassname">Sample paragraph text with different classname</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-    </div>
+            <div id="container2">
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <span>Some text in span tag</span>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="changedclassname">Sample paragraph text with different classname</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+            </div>
 
-    <!-- Symbol "~" - General sibling combinator selector.
+            <!-- Symbol "~" - General sibling combinator selector.
         - Very similar adjacent sibling combinator, but the difference is that the element being selected doesn't need to immediately succeed the first element, but can appear anywhere after it.
      -->
-    <div id="container3">
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <span>Some text in span tag</span>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="changedclassname">Sample paragraph text with different classname</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
-        <p class="para">Sample paragraph text</p>
+            <div id="container3">
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <span>Some text in span tag</span>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="changedclassname">Sample paragraph text with different classname</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+                <p class="para">Sample paragraph text</p>
+            </div>
+        </section>
     </div>
 </body>
 

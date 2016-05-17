@@ -1,7 +1,11 @@
-div {
+html, body {
+    height: auto;
+}
+
+div[id^="container"] {
     margin: 5px;
     padding: 5px;
-    border: 1px solid #000;
+    border: 1px solid #999;
 }
 
 #container1 > p {

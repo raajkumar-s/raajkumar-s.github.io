@@ -3,6 +3,10 @@ BG   #221E1D #ECEAE0 #E9633B
 TEXT #EDEBE1 #AEAB9D #63AA9C #221E1D
 */
 
+html {
+    overflow-y: scroll; /* To avoid scrollbar from disturbing the layout */
+}
+
 html,
 body {
     padding: 0;
@@ -25,7 +29,7 @@ div#wrapper {
 /* Page Header */
 
 #main_header {
-    background-color: #EB593C;
+    background-color: #E9633B;
     padding: 20px;
     min-height: 75px;
     position: relative;
@@ -33,11 +37,13 @@ div#wrapper {
 
 #main_header a {
     text-decoration: none;
-    color: #EDEBE1;
+    color: #63AA9C;
     padding: 10px;
 }
 
-#main_header > div {}
+#main_header a[class$="logo"] {
+    color: #EDEBE1;
+}
 
 #main_header > div div {
     display: inline-block;
@@ -49,9 +55,15 @@ div#wrapper {
     line-height: 75px;
 }
 
+div#wrapper > section{
+    padding: 20px;
+}
+
 section#main_section {
-    width: 90%;
+    width: 65%;
+    float: left;
     padding: 20px 5%;
+    box-sizing: border-box;
 }
 
 section article.article-item {
@@ -73,6 +85,21 @@ section article.article-item a.articlelink {
     color: inherit;
 }
 
+#upcoming_aside {
+    float: right;
+    width: 29%;
+    border: 1px solid;
+    box-sizing: border-box;
+    background-color: #221E1D;
+    color: #63AA9C;
+    margin: 3%;
+    text-align: center;
+}
+
+#upcoming_aside > section {
+    color: #317D6E;
+    font-size: 90%;
+}
 
 /* Page footer*/
 

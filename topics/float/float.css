@@ -1,10 +1,9 @@
-#span-a{
+#span-a {
 	float: left;
 	background-color: #cfc;
-	/*color: #030;*/
 	padding: 1em;
 }
 
-p{
+p {
 	border: 1px solid red;
 }

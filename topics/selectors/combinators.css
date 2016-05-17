@@ -1,20 +1,7 @@
-#wrapper {
-    width: 50%;
-    margin: 0 auto;
-}
-
 .container {
     border: 1px solid grey;
     margin: 20px;
     padding: 0px 15px;
-}
-
-#wrapper div:nth-child(2n) {
-    background: #eee;
-}
-
-#wrapper div:nth-child(2n+1) {
-    background: #E5F7FD;
 }
 
 h1 {
