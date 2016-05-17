@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="CollectionsModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Array vs List</title>
+    <link rel="stylesheet" href="collections.css">
+    <script src="../../node_modules/angular/angular.min.js"></script>
+    <script src="./collections.js"></script>
+</head>
+<body data-ng-controller="Collections as collections">
+   <section data-ng-repeat="article in articles">
+        <header>
+             <h3>{{article.title}}</h3>
+             <h2>{{article.header}}</h2>
+        </header>
+        <section data-ng-repeat="item in article.items">
+           <article>
+               <section>
+                   <header>
+                       <h3>Merits of {{item.name}}</h3>
+                   </header>
+                   <article>
+                       <ul data-ng-repeat="point in item.merits">
+                           <li>{{point}}</li>
+                       </ul>
+                   </article>
+               </section>
+               <section>
+                   <header>
+                       <h3>Demerits of {{item.name}}</h3>
+                   </header>
+                   <article>
+                       <ul data-ng-repeat="point in item.demerits">
+                           <li>{{point}}</li>
+                       </ul>
+                   </article>
+               </section>
+           </article>        
+        </section>
+    </section>
+</body>
+</html>

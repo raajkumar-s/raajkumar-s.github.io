@@ -1,0 +1,100 @@
+{
+    "articles": {
+        "arrayandlist": {
+            "title": "Array vs List",
+            "header": "Should I use Array or List??",
+            "items": [
+                {
+                    "name": "Array",
+                    "merits": [
+                  "Random access is allowed. Element is accessed by their index which helps in faster access to any element regardless of their position.",
+                  "Each array element contains just the data that needs to be stored, nothing more nothing less."
+               ],
+                    "demerits": [
+                  "Size of the array is fixed. Since the size is fixed, extending the size will be difficult and memory consuming.",
+                  "Inserting element at end of the array is faster But inserting a new element in an array of elements is expensive; because room has to be created for the new elements and to create room existing elements have to be shifted.",
+                  "Same as insertion, deletion is also expensive",
+                  "Array has fixed size. Even if we create an array of big enough size once, then inserting & deleting elements in mid of array is very costly as other elements need to be shifted."
+               ],
+                    "suitable": [
+                  "You need indexed/random access to elements.",
+                  "You know the number of elements in the array ahead of time so that you can allocate the correct amount of memory for the array.",
+                  "You need speed when iterating through all the elements in sequence. You can use pointer math on the array to access each element, whereas you need to lookup the node based on the pointer for each element in linked list, which may result in page faults which may result in performance hits.",
+                  "Memory is a concern. Filled arrays take up less memory than linked lists. Each element in the array is just the data. Each linked list node requires the data as well as one (or more) pointers to the other elements in the linked list.",
+                  "Array Lists (like those in .Net) give you the benefits of arrays, but dynamically allocate resources for you so that you don't need to worry too much about list size and you can delete items at any index without any effort or re-shuffling elements around. Performance-wise, arraylists are slower than raw arrays."
+               ]
+            },
+                {
+                    "name": "List",
+                    "merits": [
+                  "Lists don't have fixed size. Size of the list can grow/shrink on demand.",
+                  "Inserting elements is faster regardless of the position.",
+                  "Deletion is also faster."
+               ],
+                    "demerits": [
+                  "Random access is not allowed. We have to access elements sequentially starting from the first node.",
+                  "Each list node requires the data as well as pointers to the other elements in the linked list."
+               ],
+                    "suitable": [
+                  "You need constant-time insertions and deletions from the list (such as in real-time computing where time predictability is absolutely critical).",
+                  "You don't know how many items will be in the list. With arrays, you may need to re-declare and copy memory if the array grows too big.",
+                  "You don't need random access to any elements.",
+                  "You want to be able to insert items in the middle of the list (such as a priority queue)"
+               ]
+            }
+         ],
+            "conslusion": "Using a linked list is recommneded when the data is frequently updated and inserting or deleting items at arbitrary locations. Array will be faster for pretty much everything else."
+      },
+       "listandset": {
+            "title": "List vs Set",
+            "header": "Which one should I choose",
+            "items": [
+            {
+                "name": "List",
+                "merits": [                 
+                ],
+                "demerits": [                  
+                ],
+                "suitable": [                
+                ]
+            },
+            {
+                "name": "Set",
+                "merits": [                 
+                ],
+                "demerits": [                  
+                ],
+                "suitable": [                
+                ]
+            }
+         ],
+            "conslusion": ""
+      },
+    "setandmap":    {
+            "title": "Set vs Map",
+            "header": "Which one should I choose",
+            "items": [
+            {
+                "name": "Set",
+                "merits": [                 
+                ],
+                "demerits": [                  
+                ],
+                "suitable": [                
+                ]
+            },
+            {
+                "name": "Map",
+                "merits": [                 
+                ],
+                "demerits": [                  
+                ],
+                "suitable": [                
+                ]
+            }
+         ],
+            "conslusion": ""
+      }
+
+    }
+}
