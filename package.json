@@ -1,0 +1,30 @@
+{
+  "name": "rktechsblog",
+  "version": "1.0.0",
+  "description": "This is my blog through which I am trying to find how capable I am for blogging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raajkumar-s/raajkumar-s.github.io.git"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "css",
+    "javasript",
+    "datastructures",
+    "ES2015"
+  ],
+  "author": "rk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raajkumar-s/raajkumar-s.github.io/issues"
+  },
+  "homepage": "https://github.com/raajkumar-s/raajkumar-s.github.io#readme",
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
