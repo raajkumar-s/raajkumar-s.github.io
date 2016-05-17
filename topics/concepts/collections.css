@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+div#wrapper {
+    background-color: #eee; 
+}
+
+div#wrapper > section{
+    padding: 20px;
+}
+
+section.articles {
+    display: inline-block; /* Fix: To avoid gap at the top of the page caused by h2 element */
+}
+
+section.articles > header {
+    font-family: "Verdana";
+}
+
+section.properties {
+    display: inline-block; /* Fix: To avoid gap at the top of the page caused by h2 element */
+}
+
+section.properties > header {
+    font-family: "Tahoma";
+}
+
+li, p {
+    font-size: 90%;
+}

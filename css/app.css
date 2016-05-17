@@ -9,6 +9,8 @@ body {
     margin: 0;
     height: 100%;
     background-color: #221E1D;
+    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+    color: #333;
 }
 
 div#wrapper {
@@ -22,27 +24,27 @@ div#wrapper {
 
 /* Page Header */
 
-header {
+#main_header {
     background-color: #EB593C;
     padding: 20px;
     min-height: 75px;
     position: relative;
 }
 
-header a {
+#main_header a {
     text-decoration: none;
     color: #EDEBE1;
     padding: 10px;
 }
 
-header > div {}
+#main_header > div {}
 
-header > div div {
+#main_header > div div {
     display: inline-block;
     margin: 20px;
 }
 
-header div.logo-container > a {
+#main_header div.logo-container > a {
     font-size: 40px;
     line-height: 75px;
 }
@@ -55,11 +57,20 @@ section#main_section {
 section article.article-item {
     width: 49%;
     display: inline-block;
+    opacity: 1;
+}
+
+section article.article-item:hover {
+    width: 49%;
+    display: inline-block;
+    opacity: 0.6;
 }
 
 section article.article-item a.articlelink {
     display: block;
     margin: 15px;
+    text-decoration: none;
+    color: inherit;
 }
 
 

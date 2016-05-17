@@ -8,7 +8,7 @@
                     "name": "Array",
                     "merits": [
                   "Random access is allowed. Element is accessed by their index which helps in faster access to any element regardless of their position.",
-                  "Each array element contains just the data that needs to be stored, nothing more nothing less."
+                  "Each array element contains just the data that needs to be stored, nothing more nothing less."                        
                ],
                     "demerits": [
                   "Size of the array is fixed. Since the size is fixed, extending the size will be difficult and memory consuming.",
@@ -25,8 +25,8 @@
                ]
             },
                 {
-                    "name": "List",
-                    "merits": [
+                  "name": "List",
+                  "merits": [
                   "Lists don't have fixed size. Size of the list can grow/shrink on demand.",
                   "Inserting elements is faster regardless of the position.",
                   "Deletion is also faster."
@@ -43,58 +43,47 @@
                ]
             }
          ],
-            "conslusion": "Using a linked list is recommneded when the data is frequently updated and inserting or deleting items at arbitrary locations. Array will be faster for pretty much everything else."
+            "conclusion": {
+				"heading": "Conclusion",
+				"summary": "Using a linked list is recommneded when the data is frequently updated and inserting or deleting items at arbitrary locations. Array will be faster for pretty much everything else."
+			}
       },
-       "listandset": {
-            "title": "List vs Set",
-            "header": "Which one should I choose",
+       "listsetandmap": {
+            "title": "List, Set and Map",
+            "header": "Which one should I choose??",
             "items": [
             {
                 "name": "List",
-                "merits": [                 
-                ],
-                "demerits": [                  
-                ],
-                "suitable": [                
+                "properties": [
+					"List in Java provides ordered and indexed collection.",
+					"List allows duplicate elements. Any number of duplicate elements can be inserted into the list without affecting the same existing values and their indexes."
                 ]
             },
             {
                 "name": "Set",
-                "merits": [                 
-                ],
-                "demerits": [                  
-                ],
-                "suitable": [                
-                ]
-            }
-         ],
-            "conslusion": ""
-      },
-    "setandmap":    {
-            "title": "Set vs Map",
-            "header": "Which one should I choose",
-            "items": [
-            {
-                "name": "Set",
-                "merits": [                 
-                ],
-                "demerits": [                  
-                ],
-                "suitable": [                
+                "properties": [
+					"Set is a collection of unique objects i.e. Set doesn’t allow duplicates.",
+					"Set provides an un-ordered collection."
                 ]
             },
             {
                 "name": "Map",
-                "merits": [                 
-                ],
-                "demerits": [                  
-                ],
-                "suitable": [                
+                "properties": [
+					"Map holds two object per Entry e.g. key and value and it may contain duplicate values but keys are always unique.",
+					"Like Set, Map is also an unordered collection. The keys are not stored in ordered way."
                 ]
             }
          ],
-            "conslusion": ""
+            "conclusion": {
+				"heading": "Which one to choose",
+				"summary": "Based upon our understanding of difference between Set, List and Map we can now decide when to use List, Set or Map in Java.",
+				"points": [
+					"If you need to access elements frequently by using index, than List is a way to go. Its implementation e.g. ArrayList provides faster access if you know index.",
+					"If you want to store elements and want them to maintain an order on which they are inserted into collection then go for List again, as List is an ordered collection and maintain insertion order.",
+					"If you want to create collection of unique elements and don't want any duplicate than choose any Set implementation e.g. HashSet, LinkedHashSet or TreeSet. All Set implementation follow there general contract e.g. uniqueness but also add addition feature e.g. TreeSet is a SortedSet and elements stored on TreeSet can be sorted by using Comparator or Comparable in Java. LinkedHashSet also maintains insertion order.",
+					"If you store data in form of key and value than Map is the way to go. You can choose from Hashtable, HashMap, TreeMap based upon your subsequent need. In order to choose between first two see difference between HashSet and HashMap in Java."
+				]
+			}
       }
-
     }
 }

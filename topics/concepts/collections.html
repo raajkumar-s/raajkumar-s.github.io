@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="CollectionsModule">
+
 <head>
     <meta charset="UTF-8">
     <title>Array vs List</title>
+    <link rel="stylesheet" href="../../css/app.css">
     <link rel="stylesheet" href="collections.css">
     <script src="../../node_modules/angular/angular.min.js"></script>
     <script src="./collections.js"></script>
 </head>
+
 <body data-ng-controller="Collections as collections">
-   <section data-ng-repeat="article in articles">
-        <header>
-             <h3>{{article.title}}</h3>
-             <h2>{{article.header}}</h2>
+    <div id="wrapper">
+        <header id="main_header">
+            <div>
+                <div class="logo-container">
+                    <a href="/" class="rk-logo">RKTech's blog</a>
+                </div>
+                <div class="nav_container">
+                    <nav>
+                        <a href="/topics/">Topics</a>
+                        <a href="/about.html">About</a>
+                    </nav>
+                </div>
+            </div>
         </header>
-        <section data-ng-repeat="item in article.items">
-           <article>
-               <section>
-                   <header>
-                       <h3>Merits of {{item.name}}</h3>
-                   </header>
-                   <article>
-                       <ul data-ng-repeat="point in item.merits">
-                           <li>{{point}}</li>
-                       </ul>
-                   </article>
-               </section>
-               <section>
-                   <header>
-                       <h3>Demerits of {{item.name}}</h3>
-                   </header>
-                   <article>
-                       <ul data-ng-repeat="point in item.demerits">
-                           <li>{{point}}</li>
-                       </ul>
-                   </article>
-               </section>
-           </article>        
+        <section data-ng-repeat="article in articles" class="articles">
+            <header>
+                <h2>{{article.title}}</h2>
+                <h3>{{article.header}}</h3>
+            </header>
+            <section>
+                <article data-ng-repeat="item in article.items">
+                    <section ng-show="item.merits" class="properties">
+                        <header>
+                            <h3>Merits of {{item.name}}</h3>
+                        </header>
+                        <article>
+                            <ul data-ng-repeat="point in item.merits">
+                                <li>{{point}}</li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section ng-show="item.demerits" class="properties">
+                        <header>
+                            <h3>Demerits of {{item.name}}</h3>
+                        </header>
+                        <article>
+                            <ul data-ng-repeat="point in item.demerits">
+                                <li>{{point}}</li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section ng-show="item.properties" class="properties">
+                        <header>
+                            <h3>Properties of {{item.name}}</h3>
+                        </header>
+                        <article>
+                            <ul data-ng-repeat="point in item.properties">
+                                <li>{{point}}</li>
+                            </ul>
+                        </article>
+                    </section>
+                </article>
+                <section class="properties">
+                    <header>
+                        <h3>{{article.conclusion.heading}}</h3>
+                    </header>
+                    <p>{{article.conclusion.summary}}</p>
+                    <ul data-ng-show="article.conclusion.points" data-ng-repeat="point in article.conclusion.points">
+                        <li>{{point}}</li>
+                    </ul>
+                </section>
+            </section>
         </section>
-    </section>
+    </div>
 </body>
+
 </html>
