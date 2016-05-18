@@ -1,7 +1,3 @@
-html, body {
-    height: auto;
-}
-
 div[id^="container"] {
     margin: 5px;
     padding: 5px;

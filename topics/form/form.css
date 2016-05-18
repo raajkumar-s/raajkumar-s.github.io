@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 div#formContainer {
     width: 300px;
     margin: 0 auto;

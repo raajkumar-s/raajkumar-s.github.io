@@ -1,7 +1,3 @@
-html, body {
-    height: auto;
-}
-
 /* Attribute Selector */
 div[id^=article], ol.toc {
     border: 1px solid grey;

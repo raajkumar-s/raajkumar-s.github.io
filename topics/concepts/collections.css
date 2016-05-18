@@ -1,7 +1,3 @@
-html, body {
-    height: auto;
-}
-
 section.articles {
     display: inline-block; /* Fix: To avoid gap at the top of the page caused by h2 element */
 }

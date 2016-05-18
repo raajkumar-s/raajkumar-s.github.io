@@ -6,10 +6,6 @@
 }
 */
 
-html, body {
-    height: auto;
-}
-
 div[id^="container"] {
     background: #ddd;
     margin: 10px;
