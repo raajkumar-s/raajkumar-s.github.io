@@ -55,51 +55,59 @@ div#wrapper > section{
     padding: 20px;
 }
 
-section#main_section {
+#main_section {
     width: 65%;
     float: left;
     padding: 20px 5%;
     box-sizing: border-box;
 }
 
-section#main_section article.article-item {
+#main_section .article-item {
     width: 90%;
-    height: 200px;
-    margin: 15px;
+    height: 150px;
+    padding: 25px;
     display: inline-block;
     position: relative;
     opacity: 1;
     cursor: pointer;
 }
 
-section#main_section article.article-item:hover {
+#main_section .article-item:hover {
     opacity: 0.6;
 }
 
-section#main_section article.article-item div.article-container {
-    margin: 15px;
-}
-
-section#main_section article.article-item figure {
+#main_section .article-item .figure-container {
     float: left;
-    margin: 0;
+    box-sizing: border-box;
     width: 40%;
     height: 100%;
 }
 
-section#main_section article.article-item figure > img {
+#main_section .article-item figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#main_section .article-item figure > img {
     width: 100%;
     max-height: 100%;
 }
 
-section#main_section article.article-item a.articlelink {
-    display: block;
-    margin: 15px;
+#main_section .article-item .desc-container {
+    float: left;
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+#main_section .article-item .desc-container .article-title {
     text-decoration: none;
     color: inherit;
 }
 
-section#main_section article.article-item a.alink {
+#main_section .article-item .article-link {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -107,6 +115,20 @@ section#main_section article.article-item a.alink {
     right: 0;
     margin: auto;
 }
+
+#main_section div.ruler, div.top-ruler {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: radial-gradient(circle farthest-corner at 45px 45px, #ECEAE0, #221E1D 40%, #ECEAE0);
+}
+
+div.top-ruler {
+    position: relative;
+    left: 25px; /*BUG: Width doesn't match with other rulers */
+}
+
 #upcoming_aside {
     float: right;
     width: 29%;
