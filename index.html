@@ -68,25 +68,30 @@
             </section>
         </aside>
 
-        <footer id="main_footer">
+        <footer id="main_footer" data-ng-controller="ProfilesController">
             <!--<span>Icon credits: <a href="https://www.iconfinder.com/Jozef89">Jozef Krajčovič</a></span></br>-->
             <div id="profiles">
                 <span>View my profile on: </span>
+                <span data-ng-repeat="profile in profiles">
+                    <a class="profile-link" ng-href="{{profile.profileUrl}}" target="_blank">
+                        <img class="profile-icon" title="{{profile.title}}" ng-src="{{profile.iconUrl}}" alt="{{profile.iconAlt}}">
+                    </a>
+                </span>
+                <!--<span>
+                    <a class="profile-link" href="https://www.github.com/raajkumar-s" target="_blank">
+                        <img class="profile-icon" src="assets/icons/github-i-128.png" alt="My profile on GitHub">
+                    </a>
+                </span>
                 <span>
-                <a class="profile-link" href="https://in.linkedin.com/pub/rajkumar-s/25/73/230" target="_blank">
-                    <img class="profile-icon" src="assets/icons/linkedin-i-128.png" alt="My profile on LinkedIn">
-                </a>
-            </span>
+                    <a class="profile-link" href="https://www.codepen.io/raajkumar_s" target="_blank">
+                        <img class="profile-icon" src="assets/icons/codepen-i-128.png" alt="My profile on CodePen">
+                    </a>
+                </span>
                 <span>
-                <a class="profile-link" href="https://www.github.com/raajkumar-s" target="_blank">
-                    <img class="profile-icon" src="assets/icons/github-i-128.png" alt="My profile on GitHub">
-                </a>
-            </span>
-                <span>
-                <a class="profile-link" href="https://www.codepen.io/raajkumar_s" target="_blank">
-                    <img class="profile-icon" src="assets/icons/codepen-i-128.png" alt="My profile on CodePen">
-                </a>
-            </span>
+                    <a class="profile-link" href="https://www.codepen.io/raajkumar_s" target="_blank">
+                        <img class="profile-icon" src="assets/icons/codepen-i-128.png" alt="My profile on CodePen">
+                    </a>
+                </span>-->
             </div>
             <div>Copyrights: Rajkumar</div>
     </div>

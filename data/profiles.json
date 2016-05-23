@@ -1,0 +1,28 @@
+{  
+   "profiles":[
+      {
+         "title":"LinkedIn",
+		 "profileUrl":"https://in.linkedin.com/pub/rajkumar-s/25/73/230",
+		 "iconUrl":"assets/icons/linkedin-i-128.png",
+         "iconAlt":"My profile on LinkedIn"
+      },
+	  {
+         "title":"GitHub",
+		 "profileUrl":"https://www.github.com/raajkumar-s",
+		 "iconUrl":"assets/icons/github-i-128.png",
+         "iconAlt":"My profile on GitHub"
+      },
+	  {
+         "title":"codepen",
+		 "profileUrl":"https://www.codepen.io/raajkumar_s",
+		 "iconUrl":"assets/icons/codepen-i-128.png",
+         "iconAlt":"My profile on CodePen"
+      },
+	  {
+         "title":"Plunker",
+		 "profileUrl":"http://plnkr.co/users/raajkumar-s",
+		 "iconUrl":"assets/icons/plnkr-i-256.png",
+         "iconAlt":"My profile on Plunker"
+      }
+   ]
+}
