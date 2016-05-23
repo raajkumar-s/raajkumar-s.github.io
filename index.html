@@ -41,14 +41,25 @@
                 <article class="article-item" data-ng-repeat="article in articles">
                     <div class="figure-container">
                         <figure>
-                            <img data-ng-src="{{article.thumbnailUrl}}" alt="{{article.thumbnailAlt}}">
+                            <img data-ng-src="{{::article.thumbnailUrl}}" alt="{{::article.thumbnailAlt}}">
                         </figure>
                     </div>
                     <div class="desc-container">
-                        <h4 class="article-title">{{article.title}}</h4>
-                        <h5 class="article-summary">{{article.summary}}</h5>
+                       <div class="article-desc">
+                            <div class="article-title">{{::article.title}}</div>
+                            <div class="article-summary">{{::article.summary}}</div>
+                        </div>
+                        <div class="article-meta">
+                            <div class="article-author-info">
+                                <a class="article-img" ng-style="{'background-image': 'url(' + article.authorImage + ')'}"></a>
+                                <a class="article-author">{{::article.author}}</a>
+                            </div>
+                            <div class="article-categories">
+                                <span data-ng-repeat="category in article.categories | orderBy">{{::category}} </span>
+                            </div>
+                        </div>
                     </div>
-                    <a class="article-link" href="{{article.articleUrl}}"></a>
+                    <a class="article-link" href="{{::article.articleUrl}}"></a>
                     <div class="ruler"></div>
                 </article>
             </div>
@@ -73,8 +84,8 @@
             <div id="profiles">
                 <span>View my profile on: </span>
                 <span data-ng-repeat="profile in profiles">
-                    <a class="profile-link" ng-href="{{profile.profileUrl}}" target="_blank">
-                        <img class="profile-icon" title="{{profile.title}}" ng-src="{{profile.iconUrl}}" alt="{{profile.iconAlt}}">
+                    <a class="profile-link" ng-href="{{::profile.profileUrl}}" target="_blank">
+                        <img class="profile-icon" title="{{::profile.title}}" ng-src="{{::profile.iconUrl}}" alt="{{::profile.iconAlt}}">
                     </a>
                 </span>
                 <!--<span>

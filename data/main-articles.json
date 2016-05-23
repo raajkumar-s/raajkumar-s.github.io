@@ -8,9 +8,9 @@
 		 "summary":"WebAssembly or wasm is a new portable, size- and load-time-efficient format suitable for compilation to the web.",
 		 "articleUrl":"/topics/concepts/webassembly.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web"]
+		 "categories":["web"]
       },
 	  {
          "title":"Sets and Maps",
@@ -20,9 +20,9 @@
 		 "summary":"Hey, we are not gonna discuss about the Sets and Maps available in Java Collections. Now they exist in JavaScript as well. Yaay!!!",
 		 "articleUrl":"/topics/concepts/collections.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["datastructures"]
+		 "categories":["datastructures"]
       },
 	  {
          "title":"CSS Animation",
@@ -32,9 +32,9 @@
 		 "summary":"A look at CSS transition and animation properties.",
 		 "articleUrl":"/topics/animation/button.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["animation","web","css"]
+		 "categories":["animation","web","css"]
       },
 	  {
          "title":"Auto Numbering using CSS counter",
@@ -44,9 +44,9 @@
 		 "summary":"Achieving numbered bullets, ASCII coded bullets and many more just by using CSS.",
 		 "articleUrl":"/topics/css-counter/auto-numbering.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web","css"]
+		 "categories":["web","css"]
       },
 	  {
          "title":"Understanding the 'float' and 'clear' of CSS",
@@ -56,9 +56,9 @@
 		 "summary":"Mastering float and clear properties of CSS for better layout design.",
 		 "articleUrl":"/topics/float/float.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web","css"]
+		 "categories":["web","css"]
       },
 	  {
          "title":"Hands-on with CSS Font Icons",
@@ -68,9 +68,9 @@
 		 "summary":"Working with font icons from sources like FontAwesome, Google Material and Bootstrap to make your page awesome.",
 		 "articleUrl":"/topics/font-icons/cssfonticons.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web","css","fonts"]
+		 "categories":["web","css","fonts"]
       },
 	  {
          "title":"Form validation without JavaScript",
@@ -80,9 +80,9 @@
 		 "summary":"Now you can do basic form validation and update the view without even using JavaScript. CSS is getting closer to awesome.",
 		 "articleUrl":"/topics/form/form.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web","css","forms"]
+		 "categories":["web","css","forms"]
       },
 	  {
          "title":"Attribute Selectors",
@@ -92,9 +92,9 @@
 		 "summary":"Let's take a look at the attribute selector and how we can become an expert in selectors",
 		 "articleUrl":"/topics/selectors/attributeselectors.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web","css"]
+		 "categories":["web","css"]
       },
 	  {
          "title":"Combinators",
@@ -104,9 +104,9 @@
 		 "summary":"Combinator selectors!! What's that??",
 		 "articleUrl":"/topics/selectors/combinators.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web","css"]
+		 "categories":["web","css"]
       },
 	  {
          "title":"Negation Selector",
@@ -116,9 +116,9 @@
 		 "summary":"A very useful selector you should know about.",
 		 "articleUrl":"/topics/selectors/negationpseudoclasses.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web","css"]
+		 "categories":["web","css"]
       },
 	  {
          "title":"Combinators again",
@@ -128,9 +128,9 @@
 		 "summary":"",
 		 "articleUrl":"/topics/selectors/newselectors.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web","css"]
+		 "categories":["web","css"]
       },
 	  {
          "title":"Pseudo Classes",
@@ -140,9 +140,9 @@
 		 "summary":"Out of many Pseudo Classes available out there, let's take a look at few important one's you must know.",
 		 "articleUrl":"/topics/selectors/pseudoclasses.html",
 		 "author":"Raaj",
-		 "authorImage":"",
+		 "authorImage":"https://avatars3.githubusercontent.com/u/6595841?v=3&s=460",
 		 "authorProfile":"https://www.github.com/raajkumar-s",
-		 "category":["web","css"]
+		 "categories":["web","css"]
       }
    ]
 }
