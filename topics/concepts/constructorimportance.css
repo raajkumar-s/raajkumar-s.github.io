@@ -1,0 +1,14 @@
+.embedded-gist {
+    margin: 25px;
+}
+
+.gist {
+    margin: auto;
+    width: 75%;
+    overflow: auto;
+}
+
+.gist-data {
+    max-height: 500px;
+    max-width: 100%;
+}

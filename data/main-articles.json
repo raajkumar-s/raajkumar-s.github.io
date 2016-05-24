@@ -1,6 +1,18 @@
 {  
    "articles":[
       {
+         "title":"Importance of 'constructor' property in JavaScript Inheritance",
+         "header":"Understanding the importance of constructor",
+		 "thumbnailUrl":"assets/images/inheritance.png",
+         "thumbnailAlt":"Inheritance",
+		 "summary":"Whenever we write Superclass-Subclass inheritance in JavaScript using 'Constructor Functions', we always reset Subclass's constructor property to the Sub class itself. But why it should be done? What is the significance of it? Let's have a look",
+		 "articleUrl":"/topics/concepts/constructorimportance.html",
+		 "author":"Raaj",
+		 "authorImage":"https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
+		 "authorProfile":"https://www.github.com/raajkumar-s",
+		 "categories":["javascript"]
+      },
+      {
          "title":"WebAssembly",
          "header":"Let's make the web faster",
 		 "thumbnailUrl":"assets/images/webassembly.jpg",
