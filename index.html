@@ -51,8 +51,8 @@
                         </div>
                         <div class="article-meta">
                             <div class="article-author-info">
-                                <a class="article-img" ng-style="{'background-image': 'url(' + article.authorImage + ')'}"></a>
-                                <a class="article-author">{{::article.author}}</a>
+                                <a class="author-img" ng-style="{'background-image': 'url(' + article.authorImage + ')'}"></a>
+                                <a class="author-name">{{::article.author}}</a>
                             </div>
                             <div class="article-categories">
                                 <span data-ng-repeat="category in article.categories | orderBy">{{::category}} </span>

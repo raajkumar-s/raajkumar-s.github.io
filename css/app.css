@@ -124,26 +124,26 @@ div#wrapper > section{
     float: left;
 }
 
-#main_section .article-item .desc-container .article-meta .article-author-info .article-img {
+#main_section .article-item .desc-container .article-meta .article-author-info .author-img {
     display: inline-block;
     vertical-align: middle;
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 2px solid #E9633B;
+    /*border: 2px solid #317D6E;*/
     background-color: #ECEAE0;
     background-size: 100% 100%;
     box-sizing: border-box;
 }
 
-#main_section .article-item .desc-container .article-meta .article-author-info .article-author {
-    color: #E9633B;
+#main_section .article-item .desc-container .article-meta .article-author-info .author-name {
+    color: #AEAB9D;
     font-size: 90%;
     text-transform: lowercase;
 }
 
 #main_section .article-item .desc-container .article-meta .article-categories {
-    color: #317D6E;
+    color: #63AA9C;
     font-size: 80%;
     float: right;
 }
