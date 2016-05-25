@@ -51,7 +51,7 @@
                         </div>
                         <div class="article-meta">
                             <div class="article-author-info">
-                                <a class="author-img" ng-style="{'background-image': 'url(' + article.authorImage + ')'}"></a>
+                                <a class="author-img" ng-style="{'background-image': 'url(' + article.authorImage + ')'}" ng-href="{{::article.authorProfile}}" target="_blank"></a>
                                 <a class="author-name" ng-href="{{::article.authorProfile}}" target="_blank">{{::article.author}}</a>
                             </div>
                             <div class="article-categories">
