@@ -52,7 +52,7 @@
                         <div class="article-meta">
                             <div class="article-author-info">
                                 <a class="author-img" ng-style="{'background-image': 'url(' + article.authorImage + ')'}"></a>
-                                <a class="author-name">{{::article.author}}</a>
+                                <a class="author-name" ng-href="{{::article.authorProfile}}">{{::article.author}}</a>
                             </div>
                             <div class="article-categories">
                                 <span data-ng-repeat="category in article.categories | orderBy">{{::category}} </span>
@@ -88,21 +88,6 @@
                         <img class="profile-icon" title="{{::profile.title}}" ng-src="{{::profile.iconUrl}}" alt="{{::profile.iconAlt}}">
                     </a>
                 </span>
-                <!--<span>
-                    <a class="profile-link" href="https://www.github.com/raajkumar-s" target="_blank">
-                        <img class="profile-icon" src="assets/icons/github-i-128.png" alt="My profile on GitHub">
-                    </a>
-                </span>
-                <span>
-                    <a class="profile-link" href="https://www.codepen.io/raajkumar_s" target="_blank">
-                        <img class="profile-icon" src="assets/icons/codepen-i-128.png" alt="My profile on CodePen">
-                    </a>
-                </span>
-                <span>
-                    <a class="profile-link" href="https://www.codepen.io/raajkumar_s" target="_blank">
-                        <img class="profile-icon" src="assets/icons/codepen-i-128.png" alt="My profile on CodePen">
-                    </a>
-                </span>-->
             </div>
             <div>Copyrights: Rajkumar</div>
     </div>

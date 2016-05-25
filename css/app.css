@@ -73,7 +73,7 @@ div#wrapper > section{
 }
 
 #main_section .article-item:hover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 #main_section .article-item .figure-container {
@@ -135,7 +135,7 @@ div#wrapper > section{
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    /*border: 2px solid #317D6E;*/
+    border: 2px solid #AEAB9D;
     background-color: #ECEAE0;
     background-size: 100% 100%;
     box-sizing: border-box;
@@ -144,6 +144,7 @@ div#wrapper > section{
 #main_section .article-item .desc-container .article-meta .article-author-info .author-name {
     color: #AEAB9D;
     font-size: 90%;
+    text-decoration: none;
     text-transform: lowercase;
 }
 
@@ -156,7 +157,7 @@ div#wrapper > section{
 #main_section .article-item .article-link {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 25%;
     left: 0;
     right: 0;
     margin: auto;
