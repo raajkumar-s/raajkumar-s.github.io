@@ -1,0 +1,11 @@
+.equality-points {
+    width: 80%;
+}
+
+.equality-table {
+    background-image: url(../../assets/images/articles/equality-comparison.png);
+    background-size: 100% 100%;
+    width: 80%;
+    height: 350px;
+    margin: auto;
+}
