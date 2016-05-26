@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Questions - Part 2</title>
+    <link rel="stylesheet" href="../../css/app.css">
+    <link rel="stylesheet" href="interview-questions.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="main_header">
+            <div>
+                <div class="logo-container">
+                    <a href="/" class="rk-logo">RKTech's blog</a>
+                </div>
+                <div class="nav_container">
+                    <nav>
+                        <a href="/topics/">Topics</a>
+                        <a href="/about.html">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <ul>
+                <li>
+                    <div>
+                        <p>Variable Hoisting</p>
+                        <p>Links <a href="http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html">here</a> and <a href="http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/">here</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>JavaScript - quirky parts</p>
+                        <p><a href="http://bonsaiden.github.io/JavaScript-Garden/">JavaScript Garden</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>Quirks mode, almost standards and standards mode</p>
+                        <p>
+                            <a href="https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode">MDN</a>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>Many interview questions on JS, HTML, CSS and more</p>
+                        <p><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions">On GitHub</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>Interviewing a front-end developer</p>
+                        <p><a href="http://blog.sourcing.io/interview-questions">sourcing.io</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>Difference between <code>obj.prop = undefined</code> and <code>delete obj.prop</code></p>
+                        <ul>
+                            <li>
+                                Setting the property of an object to <code>undefined</code> does not remove the property from the object. The porperty still exist in the object and so in the memory. <code>obj.hasOwnProperty("prop")</code> will return
+                                <code>true</code>
+                            </li>
+                            <li>
+                                But deleting a property removes it from the object and from the memory. obj.hasOwnProperty("prop") will return <code>false</code>.
+                            </li>
+                            <li>
+                                Incase of inherited object, <code>delete</code> operator can delete only the property which is the own property of the object. It cannot delete the properties which are in the prototype.
+                                <div class="sample">
+                                    <samp>
+                                        <pre class="linenumers">
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre>
+                                    <pre>
+function Parent() {
+    this.prop = 'parent property';
+}
+
+Child.prototype = new Parent();
+Child.prototype.constructor = Child;
+
+function Child() {
+    this.prop = 'child property';          // overriding 'prop'
+}                                    
+
+var obj = new Child();
+
+console.log(obj.prop);                     // 'child property'
+
+obj.prop = undefined;
+console.log(obj.prop);                     // undefined
+
+delete obj.prop;
+console.log(a.x);                         // 'parent property'
+</pre>
+                                    <div class="clearfix"></div>
+                                </samp>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tricky JS Questions</title>
+    <link rel="stylesheet" href="../../css/app.css">
+    <link rel="stylesheet" href="tricky.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="main_header">
+            <div>
+                <div class="logo-container">
+                    <a href="/" class="rk-logo">RKTech's blog</a>
+                </div>
+                <div class="nav_container">
+                    <nav>
+                        <a href="/topics/">Topics</a>
+                        <a href="/about.html">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <header>
+                <h2>Tricky JS Questions</h2>
+            </header>
+            <article>
+                <strong><code>
+                   var foo = {n: 1};<br/>
+                   var bar = foo;<br/>
+                   foo.x = foo = {n: 2};<br/>
+                </code></strong>
+                <p>Let's take it step by step</p>
+                <p>Eventhough assignment operator (=) has right-to-left associativity, according to spec expression on the right side is evaluated first. This is get the reference to which the evaluated value will be assigned</p>
+
+                <ul>
+                    <li>
+                        <div>
+                            <code>var foo = {n: 1};</code>
+                            <p>
+                                At this stage a new object is created in memory and a reference is assigned to <code>foo</code>
+                            </p>
+                            <div class="fig fig1"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <code>var bar = foo;</code>
+                            <p>
+                                Now a new variable named <code>bar</code> is created and assigned with same reference as <code>foo</code>
+                            </p>
+                            <div class="fig fig2"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <code>foo.x = foo = {n: 2};</code>
+                            <p>
+                                Now comes the tricky part. Since the assignment operator has right-to-left (RTL) associativity, the above line of code will be equal to <code>foo.x = (foo = {n: 2});</code>.
+                            </p>
+                            <p>
+                                One can naturally expect that <code>(foo = {n: 2})</code> will return <code>{n: 2}</code> which should then be assigned to <code>foo</code>. That's true incase of primitives, it's not same for objects. Here references plays role rather than values.
+                            </p>
+
+
+                            <p>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <p>Evaluate the left-hand expression foo.x to get a reference, which is where the value of the right-hand expression will be assigned to.</p>
+                                            <div class="fig fig3"></div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Evaluate the right-hand expression, to to get the value that will be assigned. The right-hand side is another assignment expression, so it gets evaluated the same way:</p>
+                                            <ul>
+                                                <li>Evaluate foo to determine where to assign to.</li>
+                                                <li>Evaluate the expression {n:2}, which creates an object, to determine the value to assign.</li>
+                                                <li>Assign {n:2} to foo, and return {n:2}.</li>
+                                            </ul>
+                                            <div class="fig fig4"></div>
+                                            <small>Note: The <code>foo</code> which is green color is temporary.</small>
+                                        </div>
+
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>
+                                                Assign the value that the expression on the right-side evaluated to ({n:2}), to the reference that foo.x resolved to in step 1 (before foo was assigned a new value). Which is also the same as bar.x, because of the assignment bar = foo on the line before.
+                                            </p>
+                                            <div class="fig fig5"></div>
+                                        </div>
+
+                                    </li>
+                                    <p>
+                                        When this is done, the original object, that bar is still a reference to, will have an x property that references the second object created. foo is also a reference to that second object, so foo === bar.x.
+                                        <div class="fig fig6"></div>
+                                    </p>
+                            </p>
+                        </div>
+                    </li>
+                    </ul>
+                    <p>
+                        Since <code>foo</code> is new object which is referring to <code>{n : 2};</code> there no such property called <code>x</code> in <code>foo</code> object now. <code><strong>foo.x</strong></code> will be <code><strong>undefined</strong></code>.
+                    </p>
+
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>

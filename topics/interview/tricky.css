@@ -1,0 +1,34 @@
+.fig {
+    background-size: 100% 100%;
+    width: 550px;
+    height: 325px;
+}
+
+.fig1 {
+    background-image: url(../../assets/images/articles/tricky_fig1.png)
+}
+
+.fig2 {
+    background-image: url(../../assets/images/articles/tricky_fig2.png)
+}
+
+.fig3 {
+    background-image: url(../../assets/images/articles/tricky_fig3.png)
+}
+
+.fig4 {
+    background-image: url(../../assets/images/articles/tricky_fig4.png)
+}
+
+.fig5 {
+    background-image: url(../../assets/images/articles/tricky_fig5.png)
+}
+
+.fig6 {
+    background-image: url(../../assets/images/articles/tricky_fig6.png)
+}
+
+ul,
+li {
+    padding: 10px;
+}
