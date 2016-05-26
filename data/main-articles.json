@@ -181,6 +181,18 @@
             "categories": ["javascript"]
        },
         {
+            "title": "Interview Questions - Part 3",
+            "header": "Interview Questions",
+            "thumbnailUrl": "assets/images/interview.jpg",
+            "thumbnailAlt": "Interview",
+            "summary": "Interview Questions on JavaScript, HTML, CSS, Angular and many more.",
+            "articleUrl": "/topics/interview/interview-questions-3.html",
+            "author": "Raaj",
+            "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
+            "authorProfile": "https://www.github.com/raajkumar-s",
+            "categories": ["web", "javascript", "html", "css", "jquery", "angular"]
+        },
+        {
             "title": "Interview Questions - Part 2",
             "header": "Interview Questions",
             "thumbnailUrl": "assets/images/interview.jpg",

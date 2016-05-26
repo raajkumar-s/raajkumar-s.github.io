@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#frame_section {
+    /* Fill the rest of the height */
+    position: absolute;
+    bottom: 0px;
+    top: 165px;
+    left: 0px;
+    right: 0px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
