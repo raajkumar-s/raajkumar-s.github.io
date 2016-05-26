@@ -1,0 +1,23 @@
+code {
+    font-weight: 700;
+}
+
+pre {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+pre.linenumers {
+    border-right: 1px solid grey;
+}
+
+.sample {
+    border: 1px solid grey;
+    width: 60%;
+    margin: auto;
+}
+
+.clearfix {
+    clear: both;
+}
