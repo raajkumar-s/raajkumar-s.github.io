@@ -28,14 +28,17 @@
                 <h2>Tricky JS Questions</h2>
             </header>
             <article>
+                <h3>What is the value of <code>foo.x</code>?</h3>
                 <strong><code>
                    var foo = {n: 1};<br/>
                    var bar = foo;<br/>
                    foo.x = foo = {n: 2};<br/>
                 </code></strong>
-                <p>Let's take it step by step</p>
-                <p>Eventhough assignment operator (=) has right-to-left associativity, according to spec expression on the right side is evaluated first. This is get the reference to which the evaluated value will be assigned</p>
+                <p>Ans: <code>undefined</code></p>
+                <p>Surprised? Expected <code>{n:2}</code>? Let's see why it's not.</p>
 
+                <p>Before getting in to the details, you should know that eventhough assignment operator (=) has right-to-left associativity, according to spec <b>expression</b> on the right side is evaluated first. This is get to the reference of the memory to which the evaluated value will be assigned</p>
+                <p>Let's break the code</p>
                 <ul>
                     <li>
                         <div>
