@@ -1,6 +1,18 @@
 {  
    "articles":[
       {
+         "title":"==,  === and Object.is()",
+         "header":"How loose equality operator (==) is different from strict equality operator (===)",
+		 "thumbnailUrl":"assets/images/articles/equality-comparison.png",
+         "thumbnailAlt":"Inheritance",
+		 "summary":"How loose equality operator (==) is different from strict equality operator (===).",
+		 "articleUrl":"/topics/concepts/equality.html",
+		 "author":"Raaj",
+		 "authorImage":"https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
+		 "authorProfile":"https://www.github.com/raajkumar-s",
+		 "categories":["javascript"]
+      },
+      {
          "title":"Importance of 'constructor' property in JavaScript Inheritance",
          "header":"Understanding the importance of constructor",
 		 "thumbnailUrl":"assets/images/inheritance.png",
