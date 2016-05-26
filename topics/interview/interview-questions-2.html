@@ -123,6 +123,72 @@ console.log(a.x);                         // 'parent property'
                         </ul>
                     </div>
                 </li>
+                <li>
+                    <div>
+                        <p>Function Currying</p>
+                        <div class="sample">
+                            <samp>
+                                <pre class="linenumers">
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre>
+                                <pre>
+function add(a,b,c) {
+
+  if (a == undefined && b == undefined && c == undefined) {
+    return add;
+  }
+
+  else if (b == undefined && c == undefined) {
+    return function(b, c) {
+      return add(a,b,c);
+    }
+  }
+
+  else if (c == undefined) {
+    return function(c) {
+      return add(a,b,c);
+    }
+  }
+
+  else {
+    return (a+b+c);
+  }
+}
+
+var f1 = add();
+
+console.log(f1(2)()()()(3) ()()(6));        // 11
+                        </pre>
+                            </samp>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </li>
             </ul>
         </section>
     </div>
