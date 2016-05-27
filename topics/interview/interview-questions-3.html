@@ -190,6 +190,85 @@ console.log(f1(2)()()()(3) ()()(6));        // 11
                         </div>
                     </div>
                 </li>
+                <li>
+                    <p>OOPS Concepts</p>
+                    <div>
+                        The four important aspects of OOPS
+                        <ul>
+                            <li>
+                                <h3>Inheritance</h3>
+                                <p>
+                                    Inheritance is when an object or class is based on another object (prototypal inheritance) or class (class-based inheritance), using the same implementation (inheriting from an object or class) specifying implementation to maintain the same behavior.
+                                </p>
+                                <figure>
+                                    <img src="../../assets/images/inheritance.png">
+                                    <figcaption>Father - Son bond</figcaption>
+                                </figure>
+                                <p>
+                                    Above shown image is the simple example of inheritance. Father lion is the base and cub is derived from base. Cub will have some/all the properties of father lion and the cub will have properties of it's own.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Abstraction</h3>
+                                <p>
+                                    Through the process of abstraction, a programmer hides all but the relevant data about an object in order to reduce complexity and increase efficiency. Abstraction hides the internal complexity of the implementation and just exposes the interface to the developer. Developer doesn't need to be aware those internal implementation of the interface. He/She just uses the interface and gets the work done.
+                                </p>
+                                <figure>
+                                    <img src="../../assets/images/articles/abstraction.jpg">
+                                    <figcaption>A battery breakup</figcaption>
+                                </figure>
+                                <p>
+                                    Consider the above example of batter. A small battery has a complex internals tin-plate bottom, metal top, anode, etc., But a consumer has little or no awareness about these information. Cousumer buys the battery and he/she can use the battery whereever the interface is supported.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Encapsulation</h3>
+                                <p>
+                                    Encapsulation is the technique of making the fields in a class private and providing access to the fields via public methods. If a field is declared private, it cannot be accessed by anyone outside the class, thereby hiding the fields within the class. Data can only be manipulated by the accessor or similar methods.
+                                </p>
+                                <figure>
+                                    <img src="../../assets/images/articles/encapsulation.png">
+                                    <figcaption>Encapsulation</figcaption>
+                                </figure>
+                                <p>
+                                    A simple for this will be a capsule, where the bitter medicine is hidden inside the capsule. Person just takes the capsule and once the capsule reached stomach it opens up and does it's work.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Polymorphism</h3>
+                                <p>
+                                    Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object. Any Java object that can pass more than one IS-A test is considered to be polymorphic.
+                                </p>
+                                <!-- Example: In EzSign I used a common Parent 'Media' is used to reference all the children which are inherited from it like 'Window', 'Image', 'Text', 'Video', 'Audio' etc., -->
+                                <figure>
+                                    <img src="../../assets/images/articles/polymorphism.jpg">
+                                    <figcaption>Polymorphism</figcaption>
+                                </figure>
+                                <p>
+                                    Method <strong>overloading</strong> would be an example of <strong>static polymorphism</strong>. whereas <strong>overriding</strong> would be an example of <strong>dynamic polymorphism</strong>. Because, in case of overloading, at compile time the compiler knows which method to link to the call. However, it is determined at runtime for dynamic polymorphism.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p>IS-A</p>
+                    <p>Class <code>A</code> is the super-class of class <code>B</code>. So class <code>B IS-A</code> subclass of <code>A</code></p>
+                    <p>For example <code>Sales</code> IS-A <code>Department</code></p>
+                </li>
+                <li>
+                    <p>HAS-A</p>
+                    <p>Class <code>A</code> contains a member field class <code>B</code>. So class <code>A HAS</code> class <code>B</code></p>
+                    <p>For example <code>Company</code> HAS-A <code>Department</code></p>
+                </li>
+                <li>
+                    <p>Widening/Upcasting/Generalization</p>
+                    <p>Moving <strong>up</strong> in the <code>inheritance chain</code> is narrowing</p>
+                </li>
+                <li>
+                    <p>Narrowing/Downcasting/Specalization</p>
+                    <p>Moving <strong>down</strong> in the <code>inheritance chain</code> is narrowing</p>
+                </li>
             </ul>
         </section>
     </div>
