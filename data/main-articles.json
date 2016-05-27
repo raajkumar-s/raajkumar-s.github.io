@@ -10,7 +10,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["javascript"]
+            "categories": ["javascript"],
+            "display": true
       },
         {
             "title": "Importance of 'constructor' property in JavaScript Inheritance",
@@ -22,7 +23,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["javascript"]
+            "categories": ["javascript"],
+            "display": true
       },
         {
             "title": "WebAssembly",
@@ -34,7 +36,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web"]
+            "categories": ["web"],
+            "display": true
       },
         {
             "title": "Sets and Maps",
@@ -46,7 +49,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["datastructures"]
+            "categories": ["datastructures"],
+            "display": true
       },
         {
             "title": "CSS Animation",
@@ -58,7 +62,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["animation", "web", "css"]
+            "categories": ["animation", "web", "css"],
+            "display": true
       },
         {
             "title": "Auto Numbering using CSS counter",
@@ -70,7 +75,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "css"]
+            "categories": ["web", "css"],
+            "display": true
       },
         {
             "title": "Understanding the 'float' and 'clear' of CSS",
@@ -82,7 +88,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "css"]
+            "categories": ["web", "css"],
+            "display": true
       },
         {
             "title": "Hands-on with CSS Font Icons",
@@ -94,7 +101,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "css", "fonts"]
+            "categories": ["web", "css", "fonts"],
+            "display": true
       },
         {
             "title": "Form validation without JavaScript",
@@ -106,7 +114,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "css", "forms"]
+            "categories": ["web", "css", "forms"],
+            "display": true
       },
         {
             "title": "Attribute Selectors",
@@ -118,7 +127,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "css"]
+            "categories": ["web", "css"],
+            "display": true
       },
         {
             "title": "Combinators",
@@ -130,7 +140,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "css"]
+            "categories": ["web", "css"],
+            "display": true
       },
         {
             "title": "Negation Selector",
@@ -142,7 +153,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "css"]
+            "categories": ["web", "css"],
+            "display": true
       },
         {
             "title": "Combinators again",
@@ -154,7 +166,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "css"]
+            "categories": ["web", "css"],
+            "display": true
       },
         {
             "title": "Pseudo Classes",
@@ -166,7 +179,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "css"]
+            "categories": ["web", "css"],
+            "display": true
       },
         {
             "title": "Tricky questions and solutions",
@@ -178,7 +192,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["javascript"]
+            "categories": ["javascript"],
+            "display": true
        },
         {
             "title": "Interview Questions - Part 3",
@@ -190,7 +205,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "javascript", "html", "css", "jquery", "angular"]
+            "categories": ["web", "javascript", "html", "css", "jquery", "angular"],
+            "display": false
         },
         {
             "title": "Interview Questions - Part 2",
@@ -202,7 +218,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "javascript", "html", "css", "jquery", "angular"]
+            "categories": ["web", "javascript", "html", "css", "jquery", "angular"],
+            "display": false
         },
         {
             "title": "Interview Questions - Part 1",
@@ -214,7 +231,8 @@
             "author": "Raaj",
             "authorImage": "https://lh3.googleusercontent.com/-TonL3cZZx5I/AAAAAAAAAAI/AAAAAAAAHHs/vx9vsmgiDis/s120-c/photo.jpg",
             "authorProfile": "https://www.github.com/raajkumar-s",
-            "categories": ["web", "javascript", "html", "css", "jquery", "angular"]
+            "categories": ["web", "javascript", "html", "css", "jquery", "angular"],
+            "display": false
       }
    ]
 }

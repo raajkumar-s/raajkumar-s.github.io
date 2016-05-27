@@ -40,7 +40,7 @@
 
             <div data-ng-controller="ArticleController as articlestore">
                 <div class="top-ruler"></div>
-                <article class="article-item" data-ng-repeat="article in articles">
+                <article class="article-item" data-ng-repeat="article in articles" data-ng-show="article.display">
                     <div class="figure-container">
                         <figure>
                             <img data-ng-src="{{::article.thumbnailUrl}}" alt="{{::article.thumbnailAlt}}">
