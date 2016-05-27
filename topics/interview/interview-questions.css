@@ -21,3 +21,28 @@ pre.linenumers {
 .clearfix {
     clear: both;
 }
+
+figure {
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 10px #bbb;
+    text-align: center;
+    overflow: hidden;
+}
+
+figcaption {
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 110%;
+    text-align: center;
+    line-height: 175%;
+    word-spacing: 2px;
+    background: #ddd;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+    transition: top .5s ease;
+}
+
+figure:hover figcaption {
+    top: 0px;
+}
