@@ -27,8 +27,9 @@
             <header>
                 <h2>Tricky JS Questions</h2>
             </header>
-            <article>
-                <h3>What is the value of <code>foo.x</code>?</h3>
+            <article class="question-article">
+                <h3>1. What is the value of <code>foo.x</code>?</h3>
+                <h5>Tags: javascript, assignment-operator, object-reference</h5>
                 <strong><code>
                    var foo = {n: 1};<br/>
                    var bar = foo;<br/>
@@ -110,9 +111,46 @@
                     </li>
                     </ul>
                     <p>
-                        Since <code>foo</code> is new object which is referring to <code>{n : 2};</code> there no such property called <code>x</code> in <code>foo</code> object now. <code><strong>foo.x</strong></code> will be <code><strong>undefined</strong></code>.
+                        Since <code>foo</code> is new object which is referring to <code>{n : 2};</code> there no such property called <code>x</code> in <code>foo</code> object now. So <code><strong>foo.x</strong></code> will be <code><strong>undefined</strong></code>.
                     </p>
 
+            </article>
+            <hr/>
+            <article class="question-article">
+                <h3>2. Find the <code>bleak</code>number.</h3>
+                <h5>Tags: javascript, bitwise-operator</h5>
+                <p>
+                    In Mathematics each number has one special number, which it supports, chosen as follows.</br>
+                    * It counts the number of ones in its own binary representation, and adds this count to itself to obtain the value of the number it supports.</br>
+                    * That is, if j(m) means the number of ones in the binary representation of m, then m supports m+j(m).</br>
+                    * For example, the number eight (1000 in binary) supports nine, whereas nine supports eleven. However, in this way not all the numbers get supported; some are left without support, and we call these numbers bleak. For example since one supports two, two supports three and three supports five, there is no number less than four, which would support four, so four is bleak. Your task is for a given number recognize if it is bleak or supported by some number.
+                </p>
+                <p>Answer coming soon... For now check the below links for hints</p>
+                <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators">Bitwise Operator</a>
+                <a href="http://stackoverflow.com/questions/9939760/how-do-i-convert-an-integer-to-binary-in-javascript">Decimal to bitwise</a>
+                <!--       
+function isBleak(input) {
+var i, n = Number(input);
+if (isNaN(n)) {
+return "Given input is not valid";
+}
+
+n = Math.floor(n);
+
+if (n === 0) {
+return "unique";
+} else {
+for (i = n-1; i > 0; i--) {
+getSupportNumber(n);
+}
+}
+}
+
+function getSupportNumber(n) {
+var copy = n;
+
+}         
+ -->
             </article>
         </section>
     </div>
