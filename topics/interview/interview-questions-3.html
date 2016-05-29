@@ -138,6 +138,74 @@
                     </div>
                 </li>
                 <li>
+                    <h3>Why <code>parseInt()</code> is dangerous some times?</h3>
+                    <p>First let's what are the parameters of this method. <strong><a href="">MDN</a></strong> says,</p>
+                    <blockquote cite="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/parseInt">
+                        <code>parseInt(string, radix);</code>
+                        <ul>
+                            <li>
+                                string - <code>string</code> is not a string, then it is converted to a string
+                            </li>
+                            <li>
+                                radix - An integer between 2 and 36 that represents the radix
+                            </li>
+                        </ul>
+                        </code>
+                    </blockquote>
+                    <p>
+                        So far so good. If the first argument passed to the method is string, then <code>parseInt</code> doesn't have any issue with. It can happily convert and give you the integer value, based on the radix. But the problem arises when you pass anything other than String type. It'll return <code>NaN</code> for any other type of input except String and Number types. Yes, we can pass Number type also.
+                    </p>
+                    <p>
+                        The problem is, once the input number becomes quite large, it will fail to work properly. The problem is that parseInt() coerces its first parameter to a string before parsing digits. Therefore, once the number becomes sufficiently large, its string representation will be presented in exponential form (e.g., 1e+21). Accordingly, parseInt() will then try to parse 1e+21, but will stop parsing when it reaches the e character and will therefore return a value of 1. Observe:
+                    </p>
+                    <pre>
+                       > parseInt("1000000000000000000000", 10)
+                        1000000000000000000000
+                        
+                        > parseInt(1000000000000000000000, 10)        // parseInt('1e+21', 10)
+                        1
+                        
+                        // because,
+                        > String(1000000000000000000000)
+                        '1e+21'
+
+                        > parseInt(1000000000000000000000, 10) === 1000000000000000000000
+                        false
+                    </pre>
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <h3>How to the stack overflow issue in the below code when the list is very large</h3>
+                    <pre>
+                        var list = readHugeList();
+
+                        var nextListItem = function() {
+                            var item = list.pop();
+
+                            if (item) {
+                                // process the list item...
+                                nextListItem();
+                            }
+                        };
+                    </pre>
+                    <div class="clearfix">Ans:</div>
+                    <pre>
+                        var list = readHugeList();
+
+                        var nextListItem = function() {
+                            var item = list.pop();
+
+                            if (item) {
+                                // process the list item...
+                                setTimeout( nextListItem, 0);
+                            }
+                        };
+                    </pre>
+                    <div class="clearfix">
+                        The stack overflow is eliminated because the event loop handles the recursion, not the call stack. When nextListItem runs, if item is not null, the timeout function (nextListItem) is pushed to the event queue and the function exits, thereby leaving the call stack clear. When the event queue runs its timed-out event, the next item is processed and a timer is set to again invoke nextListItem. Accordingly, the method is processed from start to finish without a direct recursive call, so the call stack remains clear, regardless of the number of iterations.
+                    </div>
+                </li>
+                <li>
                     <div>
                         <h3>Why <code>isNaN()</code> is unsafe sometimes?</h3>
                         <p>

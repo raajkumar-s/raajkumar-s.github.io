@@ -46,3 +46,15 @@ figcaption {
 figure:hover figcaption {
     top: 0px;
 }
+
+blockquote {
+    background: lightblue;
+    box-shadow: 3px 3px 3px #777;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+blockquote::before,
+blockquote::after {
+    content: "\"";
+}
