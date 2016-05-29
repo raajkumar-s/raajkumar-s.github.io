@@ -27,6 +27,128 @@
             <ul>
                 <li>
                     <div>
+                        <p>Document types in HTML 4.01 (DTD)</p>
+                        <p>
+                            <h3>Before getting in to the details let us understand few definitions which will be used in this article.</h3>
+                            <div>
+                                <h4>Presentational Elements and Attributes</h4>
+                                <p>
+                                    The whole purpose of the presentaional elements and attributes are to change the look and feel of their content. They don't have any advanced layout capabilities or semantical meaning to them. For example <code>&lt;big&gt;</code> can be replaced with CSS <code>font-size</code> or <code>&lt;strong&gt;</code> tag to highlight the content on Screen Readers. These elements and attributes can be easily replaced with alternate elements or CSS styles
+                                </p>
+                                <p>Few examples of presentational elements and attributes,</p>
+                                <ul>
+                                    <li>
+                                        <h4>Presentational Elements</h4>
+                                        <a target="_blank" href="http://www.w3schools.com/tags/tag_big.asp">big</a>, <a target="_blank" href="http://www.w3schools.com/tags/tag_font.asp">font</a>, <a target="_blank" href="http://www.w3schools.com/tags/tag_strike.asp">strike</a>, <a target="_blank" href="https://developer.mozilla.org/en/docs/Web/HTML/Element/blink">blink</a> etc.,
+                                    </li>
+                                    <li>
+                                        <h4>Presentational Attributes</h4>
+                                        <a target="_blank" href="http://www.w3schools.com/tags/att_body_bgcolor.asp">bgcolor</a>, <a target="_blank" href="https://www.sitepoint.com/web-foundations/clear-html-attribute/">clear</a>, <a target="_blank" href="http://www.w3schools.com/tags/att_object_border.asp">border</a>, <a target="_blank" href="http://www.w3schools.com/tags/att_table_cellpadding.asp">cellpadding</a> etc.,
+                                    </li>
+                                </ul>
+                                <a href="https://wiki.whatwg.org/wiki/Presentational_elements_and_attributes">More Info</a>
+                            </div>
+
+                            <div>
+                                <h4>Deprecated</h4>
+                                <p>
+                                    Time to time W3C will review the existing elements and attributes to check if those still makes in the current trend. If not W3C will propose new elements and deprecate the outadated elements.
+                                </p>
+                            </div>
+                            <div>
+                                <h4>FRAMESET</h4>
+                                <p>
+                                    In frameset documents, the "FRAMESET" element replaces the "BODY" element. A standard document has one HEAD section and one BODY. A document with frames has a HEAD, a FRAMESET, and an optional BODY.
+                                </p>
+                                <div>
+                                    <a href="http://www.w3schools.com/tags/tag_frameset.asp">Example</a>
+                                    <a href="https://www.w3.org/TR/WD-html40-970708/present/frames.html">More Info</a>
+                                </div>
+                            </div>
+                        </p>
+                        <div>
+                            <h3>Now the details...</h3>
+                            <ul>
+                                <li>
+                                    <h4>Strint DTD</h4>
+                                    <p>
+                                        This DTD contains all HTML elements and attributes, but does NOT INCLUDE presentational or deprecated elements (like font). Framesets are not allowed.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>Transitional (Loose) DTD</h4>
+                                    <p>
+                                        This DTD contains all HTML elements and attributes, but does INCLUDING presentational or deprecated elements (like font). Framesets are not allowed. HTML frames allow authors to present documents in multiple views. Views may be independent windows or subwindows.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>Frameset DTD</h4>
+                                    <p>
+                                        This DTD is equal to HTML 4.01 Transitional, but allows the use of frameset content.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h3>Why <code>p</code> tag cannot contain a <code>div</code> tag in it</h3>
+                    <p>
+                        Answers:
+                        <a href="http://stackoverflow.com/a/8696078">here</a> and
+                        <a href="http://stackoverflow.com/a/34683474">here</a>
+                    </p>
+                </li>
+                <li>
+                    <h3>Advantages of <code>use strict</code></h3>
+                    <div>
+                        <h4>Converting mistakes into errors</h4>
+                        <ul>
+                            <li>
+                                Any assignment that silently fails in normal code (assignment to a non-writable property, assignment to a getter-only property, assignment to a new property on a non-extensible object) will throw in strict mode
+                            </li>
+                            <li>
+                                <p>Trying to delete a property on prototype or read-only will throw erroe</p>
+                                <p>delete Object.prototype; // throws a TypeError</p>
+                            </li>
+                            <l>
+                                <p>Variables declared without <code>var</code> will not be attached to global anymore</p>
+                                <p>mistypedVaraible = 17; // Error</p>
+                            </l>
+                            <li>
+                                <p>
+                                    Function parameters name should <strong>unique</strong>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Cannot use <code>with</code> keyword
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <code>eval</code> is executed in secured scope which doesn't disturb the scope and its variable of a function which is executing <code>eval</code>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Strict_mode">More info</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Why <code>isNaN()</code> is unsafe sometimes?</h3>
+                        <p>
+                            <code>isNaN("")</code> is supposed to return <code>true</code>. But it is actually <code>false</code>.
+                            <code>isNaN</code> coerces the its argument to number like <code>Number(arg)</code>. When we try <code>Number("")</code> it gives us <code>0</code>, which is not a NaN. Use <code>arg !== arg</code> for check if the argument is NaN.
+                        </p>
+                        <a href="Confusing_special-case_behavior">Confusing special case behavior</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
                         <p>Variable Hoisting</p>
                         <p>Links <a href="http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html">here</a> and <a href="http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/">here</a></p>
                     </div>
@@ -270,6 +392,108 @@ console.log(f1(2)()()()(3) ()()(6));        // 11
                 <li>
                     <p>Narrowing/Downcasting/Specalization</p>
                     <p>Moving <strong>down</strong> in the <code>inheritance chain</code> is narrowing</p>
+                </li>
+                <li>
+                    <p>Singleton object in JavaScript</p>
+                    <div class="sample">
+                        <samp>
+                            <pre>
+                                var Singleton = (function () {
+                                    var instance;
+
+                                    function createInstance() {
+                                        var object = new Object("I am the instance");
+                                        return object;
+                                    }
+
+                                    return {
+                                        getInstance: function () {
+                                            if (!instance) {
+                                                instance = createInstance();
+                                            }
+                                            return instance;
+                                        }
+                                    };
+                                })();
+
+                                function run() {
+
+                                    var instance1 = Singleton.getInstance();
+                                    var instance2 = Singleton.getInstance();
+
+                                    alert("Same instance? " + (instance1 === instance2));  
+                                }
+                            </pre>
+                            <div class="clearfix"></div>
+                        </samp>
+                    </div>
+                </li>
+                <li>
+                    <p>Reversing array without using <code>reverse()</code> method. Also without using another array.</p>
+                    <div class="sample">
+                        <samp>
+                            <pre>
+                                function reverse(arr) {
+                                  var i, d;
+                                  for (i = arr.length-2; i >= 0; i--) {
+                                    d = arr.splice(i, 1);
+                                    console.log(d);
+                                    arr.push(d[0]);
+                                    console.log(arr);
+                                  }
+
+                                  console.log(arr);
+                                }
+
+                                var arr = Array.prototype.slice.call("1234567890");
+
+                                reverse(arr);
+                            </pre>
+                            <div class="clearfix"></div>
+                        </samp>
+                    </div>
+                    <p>Other methods are <code>XOR swapping</code> and half swapping</p>
+                    <p>1. <a href="https://en.wikipedia.org/wiki/Exclusive_or#Truth_table">XOR</a> Swapping</p>
+                    <div class="sample">
+                        <samp>
+                            <pre>
+                               // Swapping two values
+                                var x = 10, y = 3;                               
+                                x = x ^ y;
+                                y = x ^ y;
+                                x = x ^ y;             // x = 3, y = 10
+                            </pre>
+                            <div class="clearfix"></div>
+                        </samp>
+                    </div>
+                    <figure>
+                        <img src="../../assets/images/articles/XOR_Swap.png">
+                        <figcaption>Source: Wikipedia</figcaption>
+                    </figure>
+                    <p>1. <a href="https://en.wikipedia.org/wiki/Exclusive_or#Truth_table">XOR</a> Swapping</p>
+                    <div class="sample">
+                        <samp>
+                            <pre>
+                               function reverse(arr) {
+                                  var i, t, len = arr.length, hl = Math.floor(len/2);
+                                  for (i = 0; i &lt; hl; i++) {
+                                    t = arr[i];
+                                    arr[i] = arr[len-1-i];
+
+                                    arr[len-1-i] = t;
+                                  }
+
+                                  console.log(arr);
+                                }
+
+                                var arr = Array.prototype.slice.call("1234567890");
+                                var arr = Array.prototype.slice.call("abcdefghi");
+
+                                reverse(arr);
+                            </pre>
+                            <div class="clearfix"></div>
+                        </samp>
+                    </div>
                 </li>
             </ul>
         </section>
